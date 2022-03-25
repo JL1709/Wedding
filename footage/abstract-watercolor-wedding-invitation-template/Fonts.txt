@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Clicker Script
+Author: Astigmatic
+Url: https://fonts.google.com/specimen/Clicker+Script
+
+Font: Lora
+Author: Cyreal
+Url: https://fonts.google.com/specimen/Lora
