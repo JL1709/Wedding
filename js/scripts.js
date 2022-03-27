@@ -121,6 +121,7 @@ $(document).ready(function () {
     $(function () {
 
         $('a[href*=#]:not([href=#])').click(function () {
+            console.log('CLIKED ITEM')
             if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 
                 var target = $(this.hash);
@@ -128,7 +129,7 @@ $(document).ready(function () {
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top - 90
-                    }, 2000);
+                    }, 200);
                     return false;
                 }
             }

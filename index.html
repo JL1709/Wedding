@@ -7,6 +7,7 @@
 <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -28,6 +29,7 @@
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles_new.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
@@ -311,8 +313,26 @@
                 <h3 class="header" style="text-align:center">Fragen</h3>
             </div>
         </div>
-        <div class="row" style="text-align:center">
-            <p>BLUB BLUB</p>
+        <div class="col-md-6 col-md-offset-3">
+            <div class="row" style="text-align:center">
+                <button class="faq-btn-fill faq-btn">Gibt es einen Dresscode?</button>
+                <div class="panel"><p>Lorem ipsum dolor sit amd</p></div>
+
+                <button class="faq-btn-fill faq-btn">Kann ich meinen Partner mitbringen?</button>
+                <div class="panel"><p>Lorem ipsum dolor sit amd</p></div>
+
+                <button class="faq-btn-fill faq-btn">Kann ich meinen Hund mitbringen?</button>
+                <div class="panel"><p>Lorem ipsum dolor sit amd</p></div>
+
+                <button class="faq-btn-fill faq-btn">Können wir unsere Kinder mitbringen?</button>
+                <div class="panel"><p>Lorem ipsum dolor sit amd</p></div>
+
+                <button class="faq-btn-fill faq-btn">Welche Wünsche habt ihr für die Hochzeit?</button>
+                <div class="panel"><p>Lorem ipsum dolor sit amd</p></div>
+
+                <button class="faq-btn-fill faq-btn">Ich habe weitere Fragen, wen kann ich kontaktieren?</button>
+                <div class="panel"><p>Lorem ipsum dolor sit amd</p></div>
+            </div>
         </div>
     </div>
 </section>
@@ -354,6 +374,21 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
+
+    var acc = document.getElementsByClassName("faq-btn-fill faq-btn");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
 </script>
 </body>
 </html>

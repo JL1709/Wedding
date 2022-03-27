@@ -1,0 +1,38 @@
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.faq-btn-fill{
+    -moz-border-radius:40px;
+    -webkit-border-radius:40px;
+    border-radius:40px;
+    display:inline-block;
+    text-transform:uppercase;
+    background-color:rgba(180, 210, 210, 0.178);
+    margin-bottom: 5px;
+    background-color: rgba(180, 210, 210, 0.178);
+    color: rgba(28,54,83,0.6);
+    cursor: pointer;
+    padding: 16px;
+    width: 96%;
+    border: none;
+    text-align: center;
+    outline: none;
+    border-radius: 5px;
+}
+
+.faq-btn-fill:hover,
+.faq-btn-fill:focus{
+    color:#fff;
+    background-color:rgba(180, 210, 210, 0.5);
+    color: rgba(28,54,83,0.6);
+}
+
+.faq-btn{
+    padding:15px 0;
+    border-radius:3px;
+    width:100%;
+    font-size:13px
+}
